@@ -43,21 +43,21 @@ const App: React.FC = () => {
         </div>
         
         {/* Navigation Links */}
-        <div className="flex flex-row gap-6 md:gap-12 mb-16">
+        <div className="flex flex-row gap-3 mb-16">
           <img 
             src="/assets/neon-products.png" 
             alt="Products" 
-            className="w-auto h-8 md:h-10 cursor-pointer hover:opacity-80 transition-opacity"
+            className="w-auto h-9 cursor-pointer hover:opacity-80 transition-opacity"
           />
           <img 
             src="/assets/neon-tools.png" 
             alt="Tools" 
-            className="w-auto h-8 md:h-10 cursor-pointer hover:opacity-80 transition-opacity"
+            className="w-auto h-9 cursor-pointer hover:opacity-80 transition-opacity"
           />
           <img 
             src="/assets/neon-booking.png" 
             alt="Booking" 
-            className="w-auto h-8 md:h-10 cursor-pointer hover:opacity-80 transition-opacity"
+            className="w-auto h-9 cursor-pointer hover:opacity-80 transition-opacity"
           />
         </div>
         
