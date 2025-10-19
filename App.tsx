@@ -6,9 +6,11 @@ const App: React.FC = () => {
     <div className="h-screen bg-red-900 relative md:hidden">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-contain bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url(/assets/landing-background.png)'
+          backgroundImage: 'url(/assets/landing-background.png)',
+          backgroundSize: '100% 100%',
+          backgroundPosition: 'center center'
         }}
       />
       
