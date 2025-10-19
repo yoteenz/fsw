@@ -57,13 +57,13 @@ const LobbyPage: React.FC = () => {
             src="/assets/neon-tools.png" 
             alt="Tools" 
             className="w-auto h-11 cursor-pointer hover:opacity-80 transition-opacity"
-            style={{ margin: '0', padding: '0', display: 'block', transform: 'translateX(-40px)' }}
+            style={{ margin: '0', padding: '0', display: 'block', transform: 'translateX(-20px)' }}
           />
           <img 
             src="/assets/neon-booking.png" 
             alt="Booking" 
             className="w-auto h-11 cursor-pointer hover:opacity-80 transition-opacity"
-            style={{ margin: '0', padding: '0', display: 'block', transform: 'translateX(-80px)' }}
+            style={{ margin: '0', padding: '0', display: 'block', transform: 'translateX(-40px)' }}
           />
         </div>
         
