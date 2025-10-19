@@ -40,7 +40,7 @@ const App: React.FC = () => {
           <img 
             src="/assets/neon-logo.png" 
             alt="Frontal Slayer" 
-            className="w-auto h-52 md:h-40 lg:h-48"
+            className="w-auto h-60 md:h-40 lg:h-48"
           />
         </div>
         
