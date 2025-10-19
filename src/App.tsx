@@ -1,6 +1,7 @@
 import React from 'react';
 
-const App: React.FC = () => {
+// Lobby Component
+const LobbyPage: React.FC = () => {
   console.log('LobbyPage component is rendering');
   return (
     <div className="h-screen bg-red-900 relative md:hidden">
@@ -123,6 +124,23 @@ const App: React.FC = () => {
       </div>
     </div>
   );
+};
+
+// Main App Component - Simple routing with window.location
+const App: React.FC = () => {
+  // Check the current path
+  const currentPath = window.location.pathname;
+  console.log('Current path:', currentPath);
+  
+  // If the path is /lobby, show the lobby page
+  if (currentPath === '/lobby') {
+    console.log('Showing lobby page for /lobby route');
+    return <LobbyPage />;
+  }
+  
+  // For all other paths, show the lobby page by default
+  console.log('Showing lobby page for default route');
+  return <LobbyPage />;
 };
 
 export default App;
