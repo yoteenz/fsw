@@ -43,7 +43,7 @@ const App: React.FC = () => {
         </div>
         
         {/* Navigation Links */}
-        <div className="flex flex-col md:flex-row gap-6 md:gap-12 mb-16">
+        <div className="flex flex-row gap-6 md:gap-12 mb-16">
           <img 
             src="/assets/neon-products.png" 
             alt="Products" 
