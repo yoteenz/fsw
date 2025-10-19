@@ -31,7 +31,7 @@ const App: React.FC = () => {
       </div>
       
       {/* Main Content Container */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4">
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen">
         
         {/* Neon Logo - Center */}
         <div className="mb-8">
