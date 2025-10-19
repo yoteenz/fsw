@@ -48,19 +48,19 @@ const LobbyPage: React.FC = () => {
           <img 
             src="/assets/neon-products.png" 
             alt="Products" 
-            className="w-auto h-9 cursor-pointer hover:opacity-80 transition-opacity"
+            className="w-auto h-10 cursor-pointer hover:opacity-80 transition-opacity"
             style={{ margin: '0', padding: '0', display: 'block', transform: 'translateX(0px)' }}
           />
           <img 
             src="/assets/neon-tools.png" 
             alt="Tools" 
-            className="w-auto h-9 cursor-pointer hover:opacity-80 transition-opacity"
+            className="w-auto h-10 cursor-pointer hover:opacity-80 transition-opacity"
             style={{ margin: '0', padding: '0', display: 'block', transform: 'translateX(-40px)' }}
           />
           <img 
             src="/assets/neon-booking.png" 
             alt="Booking" 
-            className="w-auto h-9 cursor-pointer hover:opacity-80 transition-opacity"
+            className="w-auto h-10 cursor-pointer hover:opacity-80 transition-opacity"
             style={{ margin: '0', padding: '0', display: 'block', transform: 'translateX(-80px)' }}
           />
         </div>
