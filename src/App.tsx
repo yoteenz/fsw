@@ -4,14 +4,19 @@ import React from 'react';
 const LobbyPage: React.FC = () => {
   console.log('LobbyPage component is rendering');
   return (
-    <div className="h-screen bg-red-900 relative md:hidden">
+      <div className="bg-red-900 relative" style={{ height: '100vh !important', overflow: 'visible !important', display: 'block !important' }}>
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-contain bg-center bg-no-repeat"
-        style={{
+        style={{ 
+          position: 'absolute !important', 
+          top: '0 !important', 
+          right: '0 !important', 
+          bottom: '0 !important', 
+          left: '0 !important', 
           backgroundImage: 'url(/assets/landing-background.png)',
-          backgroundSize: '100% 100%',
-          backgroundPosition: 'center center'
+          backgroundSize: '100% 100% !important',
+          backgroundPosition: 'center center !important',
+          backgroundRepeat: 'no-repeat !important'
         }}
       />
       
@@ -20,7 +25,7 @@ const LobbyPage: React.FC = () => {
         <img 
           src="/assets/chat-icon.svg" 
           alt="Chat" 
-          className="w-8 h-8 cursor-pointer hover:opacity-80 transition-opacity"
+          style={{ width: '32px', height: '32px', cursor: 'pointer' }}
         />
       </div>
       
@@ -29,103 +34,46 @@ const LobbyPage: React.FC = () => {
         <img 
           src="/assets/landing-menu-icon.svg" 
           alt="Menu" 
-          className="w-8 h-8 cursor-pointer hover:opacity-80 transition-opacity"
+          style={{ width: '32px', height: '32px', cursor: 'pointer' }}
         />
       </div>
       
       {/* Main Content Container */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen">
+      <div style={{ position: 'relative !important', zIndex: '10 !important', paddingTop: '0px !important', display: 'block !important' }}>
         
         {/* Neon Logo - Center */}
-        <div className="mb-8">
+        <div style={{ marginBottom: '0px !important', padding: '0px !important' }}>
           <img 
             src="/assets/neon-logo.png" 
             alt="Frontal Slayer" 
-            className="w-auto h-72 md:h-40 lg:h-48"
+            style={{ width: 'auto !important', height: '60px !important', maxHeight: '60px !important', margin: '0 !important', padding: '0 !important' }}
           />
         </div>
         
         {/* Navigation Links */}
-        <div className="flex flex-row justify-center items-center mb-16" style={{ margin: '0', padding: '0', marginTop: '15px' }}>
-          <img 
-            src="/assets/neon-products.png" 
-            alt="Products" 
-            className="w-auto h-11 cursor-pointer hover:opacity-80 transition-opacity"
-            style={{ margin: '0', padding: '0', display: 'block', transform: 'translateX(0px)' }}
-          />
-          <img 
-            src="/assets/neon-tools.png" 
-            alt="Tools" 
-            className="w-auto h-11 cursor-pointer hover:opacity-80 transition-opacity"
-            style={{ margin: '0', padding: '0', display: 'block', transform: 'translateX(-50px)' }}
-          />
-          <img 
-            src="/assets/neon-booking.png" 
-            alt="Booking" 
-            className="w-auto h-11 cursor-pointer hover:opacity-80 transition-opacity"
-            style={{ margin: '0', padding: '0', display: 'block', transform: 'translateX(-100px)' }}
-          />
-        </div>
-        
-        {/* Product Display Shelves */}
-        <div className="flex flex-col gap-8 mb-16">
-          {/* HD LACE Shelf */}
-          <div className="flex flex-col items-center">
+        <div style={{ margin: '0 !important', padding: '0 !important', position: 'relative', top: '-25px !important', marginBottom: '0 !important', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <div style={{ position: 'relative !important', display: 'flex !important', alignItems: 'center !important', gap: '0px !important', margin: '0 !important', padding: '0 !important' }}>
             <img 
-              src="/assets/hd-group.png" 
-              alt="HD Lace Collection" 
-              className="w-auto h-16 md:h-20 lg:h-24"
+              src="/assets/neon-products.png" 
+              alt="Products" 
+              style={{ width: 'auto', height: '44px', cursor: 'pointer' }}
+              style={{ margin: '0 !important', padding: '0 !important', display: 'block !important', transform: 'translateX(0px) !important' }}
             />
-          </div>
-          
-          {/* TRANSPARENT LACE Shelf */}
-          <div className="flex flex-col items-center">
             <img 
-              src="/assets/transparent-group.png" 
-              alt="Transparent Lace Collection" 
-              className="w-auto h-16 md:h-20 lg:h-24"
+              src="/assets/neon-tools.png" 
+              alt="Tools" 
+              style={{ width: 'auto', height: '44px', cursor: 'pointer' }}
+              style={{ margin: '0 !important', padding: '0 !important', display: 'block !important', transform: 'translateX(-50px) !important' }}
             />
-          </div>
-          
-          {/* CUSTOM UNITS Shelf */}
-          <div className="flex flex-col items-center">
             <img 
-              src="/assets/custom-group.png" 
-              alt="Custom Units Collection" 
-              className="w-auto h-16 md:h-20 lg:h-24"
+              src="/assets/neon-booking.png" 
+              alt="Booking" 
+              style={{ width: 'auto', height: '44px', cursor: 'pointer' }}
+              style={{ margin: '0 !important', padding: '0 !important', display: 'block !important', transform: 'translateX(-100px) !important' }}
             />
           </div>
         </div>
         
-        {/* Bottom Display Case and Accessories */}
-        <div className="relative w-3/5 max-w-3xl" style={{ marginTop: '-50px' }}>
-          {/* Acrylic Case */}
-          <div className="relative">
-            <img 
-              src="/assets/CASE.png" 
-              alt="Display Case" 
-              className="w-full h-auto"
-            />
-            
-            {/* Register - Left side of case */}
-            <div className="absolute top-4 left-8">
-              <img 
-                src="/assets/REGISTER.png" 
-                alt="Register" 
-                className="w-8 h-6 md:w-10 md:h-8"
-              />
-            </div>
-            
-            {/* Phone - Right side of case */}
-            <div className="absolute top-4 right-8">
-              <img 
-                src="/assets/PHONE.png" 
-                alt="Phone" 
-                className="w-8 h-6 md:w-10 md:h-8"
-              />
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
