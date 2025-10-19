@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build outputs
+dist/
+*.tsbuildinfo
+
+# IDE
+.vscode/
+.cursor/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# User files
+AppData/
+Documents/
+Downloads/
+Music/
+Pictures/
+Videos/
+Desktop/
+Favorites/
+Links/
+Saved Games/
+Searches/
+3D Objects/
+Contacts/
+OneDrive/
+Recent/
+SendTo/
+Start Menu/
+Templates/
+
+# System files
+*.log
+*.tmp
+*.temp
