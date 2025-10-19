@@ -44,7 +44,7 @@ const LobbyPage: React.FC = () => {
         </div>
         
         {/* Navigation Links */}
-        <div className="flex flex-row mb-16" style={{ gap: '2px' }}>
+        <div className="flex flex-row mb-16" style={{ gap: '-8px' }}>
           <img 
             src="/assets/neon-products.png" 
             alt="Products" 
