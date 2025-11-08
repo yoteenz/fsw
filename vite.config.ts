@@ -10,8 +10,11 @@ export default defineConfig({
     assetsDir: 'assets',
   },
   server: {
-    port: 3000,
+    port: 3003,
     host: '0.0.0.0',
     open: true,
+    watch: {
+      usePolling: true,
+    },
   },
 })
